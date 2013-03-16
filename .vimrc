@@ -4,3 +4,5 @@ set nocompatible  " No compatibility with vi, enable vim features
 filetype off
 call pathogen#infect()
 call pathogen#helptags()
+syntax on
+filetype plugin indent on
