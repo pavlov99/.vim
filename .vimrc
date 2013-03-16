@@ -91,6 +91,7 @@ endif
 
 colo wombat256mod
 
+let mapleader = ","
 
 " Edit
 set backspace=indent,eol,start " Allow backspace to remove indents, newlines and old text
