@@ -1,4 +1,4 @@
-set nocompatible  " No compatibility with vi, enable vim features
+﻿set nocompatible  " No compatibility with vi, enable vim features
 
 " Load pathogen with docs for all plugins
 filetype off
@@ -15,6 +15,7 @@ set autowrite               " automatically save before commands like :next and 
 " Display options
 set title                   " show file name in window title
 set visualbell              " mute error bell
+set listchars=tab:⇥\ ,trail:·,extends:⋯,precedes:⋯,eol:$,nbsp:~
 set linebreak               " break lines by words
 set winminheight=0          " minimal window height
 set winminwidth=0           " minimal window width
@@ -61,6 +62,7 @@ set spelllang=en,ru          " Languages
 set encoding=utf-8           " Default encoding
 set fileencodings=utf-8,cp1251,koi8-r,cp866
 set termencoding=utf-8
+set bomb
 
 " Wildmenu
 set wildmenu                " use wildmenu ...
