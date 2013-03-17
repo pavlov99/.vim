@@ -38,7 +38,7 @@ set softtabstop=4           " tab like 4 spaces
 set shiftround              " drop unused spaces
 
 " Backup and swap files
-set history=400             " history length
+set history=1000            " history length
 set viminfo+=h              " save history
 set ssop-=blank             " dont save blank vindow
 set ssop-=options           " dont save options
