@@ -1,5 +1,20 @@
 ﻿set nocompatible  " No compatibility with vi, enable vim features
 
+set backupdir=$HOME/.cache/vim/backup      " where to put backup file
+set backup                                 " make backup file and leave it around
+set backupskip+=svn-commit.tmp,svn-commit.[0-9]*.tmp
+set directory=/tmp                         " where to put swap file
+let g:SESSION_DIR = $HOME.'/.cache/vim/sessions'
+
+" Create system vim dirs
+if finddir(&backupdir) == ''
+    silent call mkdir(&backupdir, "p")
+endif
+
+if finddir(g:SESSION_DIR) == ''
+    silent call mkdir(g:SESSION_DIR, "p")
+endif
+
 " Load pathogen with docs for all plugins
 filetype off
 call pathogen#infect()
@@ -66,6 +81,7 @@ set bomb
 
 " Wildmenu
 set wildmenu                " use wildmenu ...
+set wildmode=list:longest   " shell similarity
 set wildcharm=<TAB>
 set wildignore=*.pyc        " ignore file pattern
 
