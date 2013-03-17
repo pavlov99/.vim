@@ -81,7 +81,6 @@ set bomb
 
 " Wildmenu
 set wildmenu                " use wildmenu ...
-set wildmode=list:longest   " shell similarity
 set wildcharm=<TAB>
 set wildignore=*.pyc        " ignore file pattern
 
