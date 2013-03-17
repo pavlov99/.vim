@@ -8,7 +8,7 @@ command-t:
 	@echo "Use ruby: "$(which ruby)
 	cd $(CURDIR)/bundle/command-t/ruby/command-t && rake make
 
-install: clean
+install: clean command-t
 	ln -s $(CURDIR)/.vimrc $(HOME)/.
 
 clean:
