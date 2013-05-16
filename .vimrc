@@ -7,6 +7,7 @@ set directory=/tmp                         " where to put swap file
 let g:SESSION_DIR = $HOME.'/.cache/vim/sessions'
 let g:username = $USERNAME
 let g:email = $EMAIL
+let g:template_dir = $HOME."/.vim/templates/"
 
 " Create system vim dirs
 if finddir(&backupdir) == ''
