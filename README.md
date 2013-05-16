@@ -3,7 +3,10 @@
 
 Vim settings
 
-## Ack installation
+## Installation
+
+Vim should be installed with `multi_byte`. It could be `vim-nox` or `macvim`.
+
 To quickly search files it is possible to use ack command
 (http://betterthangrep.com/). It is pointed to `<leader>a`.
 
