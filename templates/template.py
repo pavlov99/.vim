@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-""" %HERE%
+# vim:fenc=utf-8
+"""%HERE%
 """
 # Import built-in modules
 
@@ -8,11 +9,8 @@
 
 # Import own modules
 
-__author__ = %USER%
-__copyright__ = "Copyright © %YEAR%. All rights reserved."
-
-__maintainer__ = %USER%
-__email__ = %MAIL%
+__author__ = "%USER%"
+__email__ = "%MAIL%"
 
 
 def main():
@@ -21,5 +19,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# vim:fenc=utf-8
