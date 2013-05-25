@@ -40,3 +40,6 @@
 [submodule "bundle/vim-template"]
 	path = bundle/vim-template
 	url = https://github.com/aperezdc/vim-template.git
+[submodule "bundle/xptemplate"]
+	path = bundle/xptemplate
+	url = https://github.com/drmingdrmer/xptemplate.git
