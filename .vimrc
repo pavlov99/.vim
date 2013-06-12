@@ -45,6 +45,7 @@ Bundle 'tpope/vim-pathogen.git'
 Bundle 'tpope/vim-surround.git'
 Bundle 'vim-scripts/TaskList.vim.git'
 Bundle 'vim-scripts/vimwiki.git'
+Bundle 'Rykka/riv.vim'
 
 " Buffer options
 set hidden                  " hide buffers when they are abandoned
