@@ -43,3 +43,6 @@
 [submodule "bundle/xptemplate"]
 	path = bundle/xptemplate
 	url = https://github.com/drmingdrmer/xptemplate.git
+[submodule "bundle/riv"]
+	path = bundle/riv
+	url = https://github.com/Rykka/riv.vim
