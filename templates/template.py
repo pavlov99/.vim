@@ -11,11 +11,3 @@
 
 __author__ = "%USER%"
 __email__ = "%MAIL%"
-
-
-def main():
-    pass
-
-
-if __name__ == "__main__":
-    main()
