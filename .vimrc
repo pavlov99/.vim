@@ -8,6 +8,7 @@ let g:SESSION_DIR = $HOME.'/.cache/vim/sessions'
 let g:username = $USERNAME
 let g:email = $EMAIL
 let g:template_dir = $HOME."/.vim/templates/"
+let g:Powerline_symbols = 'fancy'
 
 " Create system vim dirs
 if finddir(&backupdir) == ''
@@ -31,21 +32,43 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'aperezdc/vim-template.git'
-Bundle 'derekwyatt/vim-scala.git'
 Bundle 'drmingdrmer/xptemplate.git'
+
+Bundle 'derekwyatt/vim-scala.git'
 Bundle 'kana/vim-fakeclip.git'
 Bundle 'kien/ctrlp.vim.git'
 Bundle 'klen/python-mode.git'
 Bundle 'majutsushi/tagbar.git'
-Bundle 'mileszs/ack.vim.git'
 Bundle 'scrooloose/nerdcommenter.git'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'tpope/vim-fugitive.git'
-Bundle 'tpope/vim-pathogen.git'
 Bundle 'tpope/vim-surround.git'
 Bundle 'vim-scripts/TaskList.vim.git'
 Bundle 'vim-scripts/vimwiki.git'
 Bundle 'Rykka/riv.vim'
+Bundle 'hallison/vim-markdown'
+
+
+Bundle 'rking/ag.vim'
+Bundle 'c.vim'
+Bundle 'Lokaltog/vim-powerline'
+
+Bundle 'csv.vim'
+Bundle 'Gundo'
+Bundle 'mattn/zencoding-vim'
+Bundle 'scrooloose/syntastic.git'
+Bundle 'LargeFile'
+Bundle 'L9'
+
+Bundle 'mhinz/vim-startify'
+Bundle 'mattn/webapi-vim'
+
+
+Bundle 'nginx.vim'
+Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
+Bundle 'bufexplorer.zip'
+Bundle 'auctex.vim'
+
 
 " Buffer options
 set hidden                  " hide buffers when they are abandoned
