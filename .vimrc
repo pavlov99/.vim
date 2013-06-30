@@ -63,7 +63,7 @@ Bundle 'scrooloose/syntastic.git'
 Bundle 'LargeFile'
 Bundle 'L9'
 
-Bundle 'mhinz/vim-startify'
+" Bundle 'mhinz/vim-startify' no need, ctrl+p does the job
 Bundle 'mattn/webapi-vim'
 
 
