@@ -1,6 +1,7 @@
-all:
+all: submodule install
+
+submodule:
 	@git submodule update --init --recursive
-	@git submodule foreach --recursive git pull origin master
 
 install: clean
 	ln -s $(CURDIR)/.vimrc $(HOME)/.
