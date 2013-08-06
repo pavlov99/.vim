@@ -48,6 +48,7 @@ Bundle 'vim-scripts/vimwiki.git'
 Bundle 'Rykka/riv.vim'
 Bundle 'hallison/vim-markdown'
 
+Bundle 'bling/vim-airline'
 
 Bundle 'rking/ag.vim'
 Bundle 'c.vim'
@@ -70,6 +71,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'nginx.vim'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'bufexplorer.zip'
+Bundle 'kana/vim-arpeggio'
 
 
 " Buffer options
