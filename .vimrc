@@ -47,8 +47,11 @@ Bundle 'vim-scripts/TaskList.vim.git'
 Bundle 'vim-scripts/vimwiki.git'
 Bundle 'Rykka/riv.vim'
 Bundle 'hallison/vim-markdown'
-
 Bundle 'bling/vim-airline'
+
+Bundle 'jceb/vim-orgmode'
+Bundle 'mattn/calendar-vim'
+Bundle 'tpope/vim-speeddating'
 
 Bundle 'rking/ag.vim'
 Bundle 'c.vim'
