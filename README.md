@@ -13,3 +13,7 @@ ag uses the silver searcher, which is faster than ack.
 
     git clone https://github.com/ggreer/the_silver_searcher ag && cd ag && ./build.sh && sudo make install
     sudo apt-get install exuberant-ctags
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pavlov99/.vim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
