@@ -106,6 +106,7 @@ set smarttab                " indent using shiftwidth"
 set shiftwidth=4            " number of spaces to use for each step of indent
 set softtabstop=4           " tab like 4 spaces
 set shiftround              " drop unused spaces
+autocmd FileType html :setlocal shiftwidth=2 ts=2 softtabstop=2
 
 " Backup and swap files
 set history=1000            " history length
