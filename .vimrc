@@ -62,7 +62,7 @@ augroup filetypedetect
 augroup END
 
 Bundle 'Gundo'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 " Bundle 'scrooloose/syntastic.git'  python-mode does the job
 Bundle 'LargeFile'
 Bundle 'L9'
