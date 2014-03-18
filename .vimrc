@@ -69,6 +69,7 @@ Bundle 'L9'
 
 " Bundle 'mhinz/vim-startify' no need, ctrl+p does the job
 Bundle 'mattn/webapi-vim'
+Bundle 'othree/javascript-libraries-syntax.vim'
 
 
 Bundle 'nginx.vim'
