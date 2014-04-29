@@ -63,24 +63,22 @@ augroup END
 
 Bundle 'Gundo'
 Bundle 'mattn/emmet-vim'
-" Bundle 'scrooloose/syntastic.git'  python-mode does the job
+" python-mode does the job
+Bundle 'scrooloose/syntastic'
 Bundle 'LargeFile'
 Bundle 'L9'
 
 " Bundle 'mhinz/vim-startify' no need, ctrl+p does the job
 Bundle 'mattn/webapi-vim'
-"Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
 
-
 Bundle 'nginx.vim'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'bufexplorer.zip'
 Bundle 'kana/vim-arpeggio'
-
 
 " Buffer options
 set hidden                  " hide buffers when they are abandoned
