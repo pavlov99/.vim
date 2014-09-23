@@ -10,6 +10,7 @@ let g:email = $EMAIL
 let g:template_dir = $HOME."/.vim/templates/"
 let g:Powerline_symbols = 'fancy'
 let g:syntastic_python_checkers = []
+let g:NERDSpaceDelims = 1
 
 " Create system vim dirs
 if finddir(&backupdir) == ''
