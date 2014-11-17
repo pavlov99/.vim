@@ -48,6 +48,7 @@ Bundle 'tpope/vim-surround.git'
 Bundle 'vim-scripts/TaskList.vim.git'
 Bundle 'vim-scripts/vimwiki.git'
 Bundle 'Rykka/riv.vim'
+Bundle 'Rykka/clickable.vim'
 Bundle 'hallison/vim-markdown'
 Bundle 'bling/vim-airline'
 
