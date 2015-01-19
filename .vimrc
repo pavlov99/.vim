@@ -11,6 +11,7 @@ let g:template_dir = $HOME."/.vim/templates/"
 let g:Powerline_symbols = 'fancy'
 let g:syntastic_python_checkers = []
 let g:NERDSpaceDelims = 1
+let g:pymode_rope_lookup_project = 0
 
 " Create system vim dirs
 if finddir(&backupdir) == ''
