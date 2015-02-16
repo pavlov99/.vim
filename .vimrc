@@ -74,6 +74,7 @@ Bundle 'c.vim'
 Bundle 'csv.vim'
 augroup filetypedetect
     au! BufRead,BufNewFile *.csv,*.dat	setfiletype csv
+    au! BufNewFile,BufRead *.less set filetype=less
 augroup END
 
 Bundle 'Gundo'
@@ -85,10 +86,11 @@ Bundle 'L9'
 
 " Bundle 'mhinz/vim-startify' no need, ctrl+p does the job
 Bundle 'mattn/webapi-vim'
-Bundle 'groenewege/vim-less'
 Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'gorodinskiy/vim-coloresque'
+Bundle 'groenewege/vim-less'
 
 Bundle 'nginx.vim'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
