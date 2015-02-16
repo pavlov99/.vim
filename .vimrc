@@ -11,6 +11,17 @@ let g:template_dir = $HOME."/.vim/templates/"
 let g:Powerline_symbols = 'fancy'
 let g:syntastic_python_checkers = []
 
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" END: Syntastic settings
+
 " Create system vim dirs
 if finddir(&backupdir) == ''
     silent call mkdir(&backupdir, "p")
