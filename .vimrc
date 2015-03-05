@@ -12,6 +12,8 @@ let g:Powerline_symbols = 'fancy'
 let g:syntastic_python_checkers = []
 let g:NERDSpaceDelims = 1
 let g:pymode_rope_lookup_project = 0
+let g:pymode_rope = 0
+let g:pymode_breakpoint_cmd = "import ipdb; ipdb.set_trace()  # XXX BREAKPOINT"
 
 " Syntastic settings
 set statusline+=%#warningmsg#
