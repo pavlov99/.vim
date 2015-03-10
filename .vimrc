@@ -196,6 +196,10 @@ set virtualedit=all         " on virtualedit for all modes
 set confirm
 set numberwidth=1              " Keep line numbers small if it's shown
 
+" Set paste
+nnoremap <F10> :set invpaste paste?<CR>
+set pastetoggle=<F10>
+
 " # Project settings
 " enables the reading of .vimrc, .exrc and .gvimrc in the current directory.
 set exrc
