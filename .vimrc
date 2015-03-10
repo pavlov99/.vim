@@ -26,6 +26,11 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " END: Syntastic settings
 
+" ChangeLog settings (default ft-changelog-plugin)
+" Name file ChangeLog, this is most canonical name.
+let g:changelog_username = $USERNAME." <".$EMAIL.">"
+" END: ChangeLog settings
+
 " Create system vim dirs
 if finddir(&backupdir) == ''
     silent call mkdir(&backupdir, "p")
