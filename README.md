@@ -15,6 +15,8 @@ ag uses the silver searcher, which is faster than ack.
     sudo apt-get install exuberant-ctags
     sudo npm install -g jshint less
 
+Installation in MacOS
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pavlov99/.vim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+    Install homebrew: http://brew.sh/
+    brew install the_silver_searcher ctags-exuberant node
 
