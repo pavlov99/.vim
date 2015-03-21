@@ -100,6 +100,7 @@ Bundle 'gorodinskiy/vim-coloresque'
 Bundle 'groenewege/vim-less'
 
 Bundle 'nginx.vim'
+Bundle 'JuliaLang/julia-vim'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'bufexplorer.zip'
 Bundle 'kana/vim-arpeggio'
