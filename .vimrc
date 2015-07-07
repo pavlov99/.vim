@@ -103,6 +103,7 @@ Bundle 'nginx.vim'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'bufexplorer.zip'
 Bundle 'kana/vim-arpeggio'
+Bundle 'chase/vim-ansible-yaml'
 
 " Buffer options
 set hidden                  " hide buffers when they are abandoned
