@@ -100,6 +100,7 @@ Bundle 'gorodinskiy/vim-coloresque'
 Bundle 'groenewege/vim-less'
 
 Bundle 'nginx.vim'
+Bundle 'JuliaLang/julia-vim'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'bufexplorer.zip'
 Bundle 'kana/vim-arpeggio'
@@ -205,6 +206,8 @@ set numberwidth=1              " Keep line numbers small if it's shown
 " Set paste
 nnoremap <F10> :set invpaste paste?<CR>
 set pastetoggle=<F10>
+
+nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
 " # Project settings
 " enables the reading of .vimrc, .exrc and .gvimrc in the current directory.
