@@ -34,6 +34,8 @@ let g:changelog_username = $USERNAME." <".$EMAIL.">"
 let CoVim_default_name = "pavlov99"
 let CoVim_default_port = "5005"
 
+let g:javascript_conceal_function   = "ƒ"
+
 " Create system vim dirs
 if finddir(&backupdir) == ''
     silent call mkdir(&backupdir, "p")
@@ -96,7 +98,10 @@ Bundle 'L9'
 
 " Bundle 'mhinz/vim-startify' no need, ctrl+p does the job
 Bundle 'mattn/webapi-vim'
+Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Raimondi/delimitMate'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'gorodinskiy/vim-coloresque'
