@@ -31,6 +31,9 @@ let g:syntastic_check_on_wq = 0
 let g:changelog_username = $USERNAME." <".$EMAIL.">"
 " END: ChangeLog settings
 
+let CoVim_default_name = "pavlov99"
+let CoVim_default_port = "5005"
+
 " Create system vim dirs
 if finddir(&backupdir) == ''
     silent call mkdir(&backupdir, "p")
@@ -105,6 +108,7 @@ Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'bufexplorer.zip'
 Bundle 'kana/vim-arpeggio'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'FredKSchott/CoVim'
 
 " Buffer options
 set hidden                  " hide buffers when they are abandoned
