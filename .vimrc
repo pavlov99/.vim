@@ -56,61 +56,63 @@ filetype plugin indent on
 set rtp+=$HOME/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
+call plug#begin('~/.vim/plugged')
 
-Bundle 'kien/ctrlp.vim.git'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'kana/vim-fakeclip.git'
-Bundle 'klen/python-mode.git'
-Bundle 'tpope/vim-fugitive.git'
-Bundle 'tpope/vim-surround.git'
-Bundle 'mattn/emmet-vim'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'scrooloose/nerdtree', {'on':  'NERDTreeToggle'}
+Plug 'scrooloose/nerdcommenter'
+Plug 'kana/vim-fakeclip'
+Plug 'klen/python-mode'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'mattn/emmet-vim'
 
-Bundle 'c.vim'
-Bundle 'derekwyatt/vim-scala.git'
-Bundle 'rking/ag.vim'
-Bundle 'aperezdc/vim-template.git'
-Bundle 'drmingdrmer/xptemplate.git'
-Bundle 'majutsushi/tagbar.git'
-Bundle 'Rykka/riv.vim'
-Bundle 'hallison/vim-markdown'
+Plug 'c.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'rking/ag.vim'
+Plug 'aperezdc/vim-template'
+Plug 'drmingdrmer/xptemplate'
+Plug 'majutsushi/tagbar'
+Plug 'Rykka/riv.vim'
+Plug 'hallison/vim-markdown'
 
-Bundle 'vim-scripts/vimwiki.git'
-Bundle 'itchyny/calendar.vim'
-Bundle 'vim-scripts/TaskList.vim.git'
-Bundle 'jceb/vim-orgmode'
+Plug 'vim-scripts/vimwiki'
+Plug 'itchyny/calendar.vim'
+Plug 'vim-scripts/TaskList.vim'
+Plug 'jceb/vim-orgmode'
 
 
-Bundle 'csv.vim'
+Plug 'csv.vim'
 augroup filetypedetect
     au! BufRead,BufNewFile *.csv,*.dat	setfiletype csv
     au! BufNewFile,BufRead *.less set filetype=less
 augroup END
 
-Bundle 'Gundo'
+Plug 'Gundo'
 " python-mode does the job
-Bundle 'scrooloose/syntastic'
-Bundle 'LargeFile'
-Bundle 'L9'
+Plug 'scrooloose/syntastic'
+Plug 'LargeFile'
+Plug 'L9'
 
-Bundle 'mattn/webapi-vim'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'othree/html5.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'gorodinskiy/vim-coloresque'
-Bundle 'groenewege/vim-less'
+Plug 'mattn/webapi-vim'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'othree/html5.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'gorodinskiy/vim-coloresque'
+Plug 'groenewege/vim-less'
 
-Bundle 'nginx.vim'
-Bundle 'JuliaLang/julia-vim'
-Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
-Bundle 'bufexplorer.zip'
-Bundle 'kana/vim-arpeggio'
-Bundle 'chase/vim-ansible-yaml'
-Bundle 'FredKSchott/CoVim'
+Plug 'nginx.vim'
+Plug 'JuliaLang/julia-vim'
+Plug 'LaTeX-Suite-aka-Vim-LaTeX'
+Plug 'bufexplorer.zip'
+Plug 'kana/vim-arpeggio'
+Plug 'chase/vim-ansible-yaml'
+Plug 'FredKSchott/CoVim'
+
+call plug#end()
 
 " Buffer options
 set hidden                  " hide buffers when they are abandoned
