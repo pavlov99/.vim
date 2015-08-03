@@ -1,11 +1,8 @@
-all: submodule install
-
-submodule:
-	@git submodule update --init --recursive
+all: install
 
 install: clean
 	@ln -s $(CURDIR)/.vimrc $(HOME)/.
-	@vim +BundleInstall
+	@vim +PlugInstall
 
 clean:
 	@rm -rf $(HOME)/.vimrc
