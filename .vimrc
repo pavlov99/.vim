@@ -87,6 +87,7 @@ Plug 'csv.vim'
 augroup filetypedetect
     au! BufRead,BufNewFile *.csv,*.dat	setfiletype csv
     au! BufNewFile,BufRead *.less set filetype=less
+    au! BufRead,BufNewFile *.json set filetype=json
 augroup END
 
 Plug 'Gundo'
@@ -111,6 +112,17 @@ Plug 'bufexplorer.zip'
 Plug 'kana/vim-arpeggio'
 Plug 'chase/vim-ansible-yaml'
 Plug 'FredKSchott/CoVim'
+
+Plug 'elzr/vim-json'
+augroup json_autocmd
+    autocmd!
+    autocmd FileType json set autoindent
+    autocmd FileType json set formatoptions=tcq2l
+    autocmd FileType json set textwidth=78 shiftwidth=2
+    autocmd FileType json set softtabstop=2 tabstop=8
+    autocmd FileType json set expandtab
+    autocmd FileType json set foldmethod=syntax
+augroup END
 
 call plug#end()
 
