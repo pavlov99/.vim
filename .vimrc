@@ -9,7 +9,6 @@ let g:username = $USERNAME
 let g:email = $EMAIL
 let g:template_dir = $HOME."/.vim/templates/"
 let g:Powerline_symbols = 'fancy'
-let g:syntastic_python_checkers = []
 let g:NERDSpaceDelims = 1
 let g:pymode_rope_lookup_project = 0
 let g:pymode_rope = 0
@@ -20,6 +19,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_python_checkers = []
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -31,7 +31,7 @@ let g:syntastic_check_on_wq = 0
 let g:changelog_username = $USERNAME." <".$EMAIL.">"
 " END: ChangeLog settings
 
-let CoVim_default_name = "pavlov99"
+let CoVim_default_name = $USERNAME
 let CoVim_default_port = "5005"
 
 let g:javascript_conceal_function   = "ƒ"
@@ -57,31 +57,30 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'aperezdc/vim-template.git'
-Bundle 'drmingdrmer/xptemplate.git'
-
-Bundle 'derekwyatt/vim-scala.git'
-Bundle 'kana/vim-fakeclip.git'
 Bundle 'kien/ctrlp.vim.git'
-Bundle 'klen/python-mode.git'
-Bundle 'majutsushi/tagbar.git'
-Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree.git'
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'kana/vim-fakeclip.git'
+Bundle 'klen/python-mode.git'
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'tpope/vim-surround.git'
-Bundle 'vim-scripts/TaskList.vim.git'
-Bundle 'vim-scripts/vimwiki.git'
-Bundle 'Rykka/riv.vim'
-Bundle 'Rykka/clickable.vim'
-Bundle 'hallison/vim-markdown'
-Bundle 'bling/vim-airline'
+Bundle 'mattn/emmet-vim'
 
-Bundle 'jceb/vim-orgmode'
-Bundle 'mattn/calendar-vim'
-Bundle 'tpope/vim-speeddating'
-
-Bundle 'rking/ag.vim'
 Bundle 'c.vim'
+Bundle 'derekwyatt/vim-scala.git'
+Bundle 'rking/ag.vim'
+Bundle 'aperezdc/vim-template.git'
+Bundle 'drmingdrmer/xptemplate.git'
+Bundle 'majutsushi/tagbar.git'
+Bundle 'Rykka/riv.vim'
+Bundle 'hallison/vim-markdown'
+
+Bundle 'vim-scripts/vimwiki.git'
+Bundle 'itchyny/calendar.vim'
+Bundle 'vim-scripts/TaskList.vim.git'
+Bundle 'jceb/vim-orgmode'
+
 
 Bundle 'csv.vim'
 augroup filetypedetect
@@ -90,18 +89,15 @@ augroup filetypedetect
 augroup END
 
 Bundle 'Gundo'
-Bundle 'mattn/emmet-vim'
 " python-mode does the job
 Bundle 'scrooloose/syntastic'
 Bundle 'LargeFile'
 Bundle 'L9'
 
-" Bundle 'mhinz/vim-startify' no need, ctrl+p does the job
 Bundle 'mattn/webapi-vim'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Raimondi/delimitMate'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'gorodinskiy/vim-coloresque'
