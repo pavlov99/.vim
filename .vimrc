@@ -71,8 +71,6 @@ Plug 'mattn/emmet-vim'
 Plug 'c.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'rking/ag.vim'
-Plug 'aperezdc/vim-template'
-Plug 'drmingdrmer/xptemplate'
 Plug 'majutsushi/tagbar'
 Plug 'Rykka/riv.vim'
 Plug 'hallison/vim-markdown'
@@ -81,6 +79,8 @@ Plug 'vim-scripts/vimwiki'
 Plug 'itchyny/calendar.vim'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'jceb/vim-orgmode'
+
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 
 Plug 'csv.vim'
