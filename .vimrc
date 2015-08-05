@@ -8,6 +8,7 @@ let g:SESSION_DIR = $HOME.'/.cache/vim/sessions'
 let g:username = $USERNAME
 let g:email = $EMAIL
 let g:template_dir = $HOME."/.vim/templates/"
+let g:ycm_global_ycm_extra_conf = $HOME.'/.cache/vim/YouCompleteMe/.ycm_extra_conf.py'
 let g:Powerline_symbols = 'fancy'
 let g:NERDSpaceDelims = 1
 let g:pymode_rope_lookup_project = 0
@@ -92,7 +93,7 @@ function! BuildYCM(info)
 endfunction
 Plug 'Valloric/YouCompleteMe', {'do': function('BuildYCM')}
 autocmd! User YouCompleteMe call youcompleteme#Enable()
-
+Plug 'rdnetto/YCM-Generator', {'branch': 'stable'}
 
 Plug 'csv.vim'
 augroup filetypedetect
