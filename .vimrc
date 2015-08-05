@@ -80,7 +80,18 @@ Plug 'itchyny/calendar.vim'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'jceb/vim-orgmode'
 
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Build you complete me
+function! BuildYCM(info)
+  " info is a dictionary with 3 fields
+  " - name:   name of the plugin
+  " - status: 'installed', 'updated', or 'unchanged'
+  " - force:  set on PlugInstall! or PlugUpdate!
+  if a:info.status == 'installed' || a:info.force
+    !YCM_CORES=1 ./install.sh --clang-completer --gocode-completer
+  endif
+endfunction
+Plug 'Valloric/YouCompleteMe', {'do': function('BuildYCM')}
+autocmd! User YouCompleteMe call youcompleteme#Enable()
 
 
 Plug 'csv.vim'

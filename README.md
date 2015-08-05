@@ -12,7 +12,10 @@ To quickly search files it is possible to use ag command
 ag uses the silver searcher, which is faster than ack.
 
     git clone https://github.com/ggreer/the_silver_searcher ag && cd ag && ./build.sh && sudo make install
-    sudo apt-get install exuberant-ctags
+
+Other progamms here
+
+    sudo apt-get install exuberant-ctags build-essential cmake python-dev golang
     sudo npm install -g jshint less
 
 Installation in MacOS
@@ -20,3 +23,14 @@ Installation in MacOS
     Install homebrew: http://brew.sh/
     brew install the_silver_searcher ctags-exuberant node
 
+YouCompleteMe
+
+    # Add swap file if "sudo swapon -s" is empty
+    sudo dd if=/dev/zero of=/swapfile bs=1024 count=512k
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
+    swapon -s
+
+Compile:
+
+    ~/.vim/plugged/YouCompleteMe/install.sh --clang-completer --gocode-completer
