@@ -36,8 +36,6 @@ let g:changelog_username = $USERNAME." <".$EMAIL.">"
 let CoVim_default_name = $USERNAME
 let CoVim_default_port = "5005"
 
-let g:javascript_conceal_function   = "ƒ"
-
 " Create system vim dirs
 if finddir(&backupdir) == ''
     silent call mkdir(&backupdir, "p")
@@ -109,8 +107,9 @@ Plug 'LargeFile'
 Plug 'L9'
 
 Plug 'mattn/webapi-vim'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript',
+Plug 'jelera/vim-javascript-syntax',
+Plug 'marijnh/tern_for_vim',
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
 Plug 'kchmck/vim-coffee-script'
@@ -169,6 +168,7 @@ set softtabstop=4           " tab like 4 spaces
 set shiftround              " drop unused spaces
 autocmd FileType html :setlocal shiftwidth=2 ts=2 softtabstop=2
 autocmd Filetype javascript :setlocal shiftwidth=2 ts=2 softtabstop=2
+autocmd FileType javascript call JavaScriptFold()
 
 " Backup and swap files
 set history=1000            " history length
