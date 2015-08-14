@@ -195,7 +195,8 @@ set spelllang=en,ru          " Languages
 set encoding=utf-8           " Default encoding
 set fileencodings=utf-8,cp1251,koi8-r,cp866
 set termencoding=utf-8
-set bomb
+" set bomb
+" setglobal bomb
 
 " Wildmenu
 set wildmenu                " use wildmenu ...
