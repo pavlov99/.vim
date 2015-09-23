@@ -107,6 +107,7 @@ Plug 'LargeFile'
 Plug 'L9'
 
 Plug 'mattn/webapi-vim'
+Plug 'mattn/vdbi-vim'
 Plug 'pangloss/vim-javascript',
 Plug 'jelera/vim-javascript-syntax',
 Plug 'marijnh/tern_for_vim',
@@ -123,6 +124,7 @@ Plug 'bufexplorer.zip'
 Plug 'kana/vim-arpeggio'
 Plug 'chase/vim-ansible-yaml'
 Plug 'FredKSchott/CoVim'
+Plug 'dbext.vim'
 
 Plug 'elzr/vim-json'
 augroup json_autocmd
