@@ -18,7 +18,10 @@ Other progamms here
     sudo apt-get install exuberant-ctags build-essential cmake python-dev golang libclang-3.5-dev clang-3.5 clang++-3.5
     sudo npm install -g jshint less
 
-Install perl connector to database:
+Install perl connector to database. Some docs here: http://www.cpan.org/modules/INSTALL.html
+
+    # Install updated package manager for Perl (cpanm)
+    cpan App::cpanminus OR sudo apt-get install cpanminus
 
     cpanm DBI Plack JSON
 
