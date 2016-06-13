@@ -108,7 +108,8 @@ Plug 'L9'
 
 Plug 'mattn/webapi-vim'
 Plug 'pangloss/vim-javascript',
-Plug 'jelera/vim-javascript-syntax',
+Plug 'mxw/vim-jsx',
+Plug 'isRuslan/vim-es6'
 Plug 'marijnh/tern_for_vim',
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
@@ -118,7 +119,6 @@ Plug 'groenewege/vim-less'
 
 Plug 'nginx.vim'
 Plug 'JuliaLang/julia-vim'
-Plug 'LaTeX-Suite-aka-Vim-LaTeX'
 Plug 'bufexplorer.zip'
 Plug 'kana/vim-arpeggio'
 Plug 'chase/vim-ansible-yaml'
@@ -168,7 +168,6 @@ set softtabstop=4           " tab like 4 spaces
 set shiftround              " drop unused spaces
 autocmd FileType html :setlocal shiftwidth=2 ts=2 softtabstop=2
 autocmd Filetype javascript :setlocal shiftwidth=2 ts=2 softtabstop=2
-autocmd FileType javascript call JavaScriptFold()
 
 " Backup and swap files
 set history=1000            " history length
@@ -241,6 +240,7 @@ nnoremap <F10> :set invpaste paste?<CR>
 set pastetoggle=<F10>
 
 nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
+au BufReadPost *.hbs set syntax=html
 
 " # Project settings
 " enables the reading of .vimrc, .exrc and .gvimrc in the current directory.
