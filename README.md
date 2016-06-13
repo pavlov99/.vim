@@ -16,7 +16,7 @@ ag uses the silver searcher, which is faster than ack.
 Other progamms here
 
     sudo apt-get install exuberant-ctags build-essential cmake python-dev golang libclang-3.5-dev clang-3.5 clang++-3.5
-    sudo npm install -g jshint less
+    sudo npm install -g jshint eslint babel-eslint eslint-plugin-react less
 
 Install perl connector to database. Some docs here: http://www.cpan.org/modules/INSTALL.html
 

@@ -21,12 +21,15 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_python_checkers = []
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=3
 " END: Syntastic settings
+
+let g:jsx_ext_required = 0
 
 " ChangeLog settings (default ft-changelog-plugin)
 " Name file ChangeLog, this is most canonical name.
@@ -110,8 +113,7 @@ Plug 'mattn/webapi-vim'
 Plug 'mattn/vdbi-vim'
 Plug 'pangloss/vim-javascript',
 Plug 'mxw/vim-jsx',
-Plug 'isRuslan/vim-es6'
-Plug 'marijnh/tern_for_vim',
+" Plug 'marijnh/tern_for_vim',
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
 Plug 'kchmck/vim-coffee-script'
