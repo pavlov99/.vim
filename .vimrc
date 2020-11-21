@@ -31,10 +31,12 @@ let g:lightline = {
       \ }
 
 call minpac#add('preservim/nerdtree')
+call minpac#add('elmcast/elm-vim')
 
 
+let mapleader=","
 set encoding=utf8
-set guifont=Sauce Code\ Pro\ Nerd\ Font\ Complete\ Mono\ 11
+set guifont=Sauce\ Code\ Pro\ Nerd\ Font\ Complete\ Mono\ 11
 if !has('gui_running')
   set t_Co=256
 endif
@@ -47,3 +49,19 @@ set title                   " show file name in window title
 " Language specific settings
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
+
+
+function! FzyCommand(choice_command, vim_command)
+  try
+    let output = system(a:choice_command . " | fzy ")
+  catch /Vim:Interrupt/
+    " Swallow errors from ^C, allow redraw! below
+  endtry
+  redraw!
+  if v:shell_error == 0 && !empty(output)
+    exec a:vim_command . ' ' . output
+  endif
+endfunction
+
+" nnoremap <leader>fz :call FzyCommand("find . -type f", ":e")<cr>
+nnoremap <leader>fz :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
