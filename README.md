@@ -3,6 +3,14 @@
 
 Vim settings
 
+## Changelog
+* Use [minpac](https://github.com/k-takata/minpac) package manager.
+* [ALE](https://github.com/dense-analysis/ale) for file linting.
+* Pick [lightline](https://github.com/itchyny/lightline.vim) over deprecated vim-powerline and vim-airline.
+* [universal-ctags](https://github.com/universal-ctags/ctags) instead of exuberant-ctags. E.g. `snap install universal-ctags`
+* [fzf](https://github.com/junegunn/fzf)
+* [Fira Code](https://github.com/tonsky/FiraCode) `snap install fonts-firacode`
+
 ## Installation
 
 Vim should be installed with `multi_byte`. It could be `vim-nox` or `macvim`.
@@ -30,14 +38,6 @@ Installation in MacOS
     Install homebrew: http://brew.sh/
     brew install the_silver_searcher ctags-exuberant node
 
-YouCompleteMe
-
-    # Add swap file if "sudo swapon -s" is empty
-    sudo dd if=/dev/zero of=/swapfile bs=1024 count=512k
-    sudo mkswap /swapfile
-    sudo swapon /swapfile
-    swapon -s
-
-Compile:
-
-    ~/.vim/plugged/YouCompleteMe/install.sh --clang-completer --gocode-completer
+### Credits
+* https://gitee.com/dasky92/vim-config
+* [Source Code Pro Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/SourceCodePro). Download font file [Sauce Code Pro Nerd Font Complete Mono.ttf](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Regular/complete/Sauce%20Code%20Pro%20Nerd%20Font%20Complete%20Mono.ttf) to `~/.fonts` and run `sudo fc-cache`.
