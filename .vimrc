@@ -34,6 +34,10 @@ call minpac#add('preservim/nerdtree')
 call minpac#add('elmcast/elm-vim')
 
 
+" Disable backup files *.ext~
+set nobackup
+set nowritebackup  " prevent 'jumping files' on the Windows desktop
+
 let mapleader=","
 set encoding=utf8
 set guifont=Sauce\ Code\ Pro\ Nerd\ Font\ Complete\ Mono\ 11
@@ -41,7 +45,16 @@ if !has('gui_running')
   set t_Co=256
 endif
 
-colo wombat256mod
+if &t_Co >= 256 || has("gui_running")
+    colorscheme wombat256mod
+endif
+
+if &t_Co > 2 || has("gui_running")
+    " switch syntax highlighting on, when the terminal has colors
+    syntax on
+endif
+
+filetype plugin indent on  " enable indenting based on the file type
 
 " Display options
 set title                   " show file name in window title
