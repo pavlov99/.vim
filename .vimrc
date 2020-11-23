@@ -18,6 +18,32 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 " Add other plugins here.
 call minpac#add('ryanoasis/vim-devicons')
 call minpac#add('liuchengxu/vista.vim')
+call minpac#add('prabirshrestha/vim-lsp')
+
+if executable('pyls')
+    " pip install python-language-server
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'allowlist': ['python'],
+        \ })
+endif
+
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+    setlocal signcolumn=yes
+    if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
+    nmap <buffer> gd <plug>(lsp-definition)
+endfunction
+
+augroup lsp_install
+    au!
+    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
+
+" call minpac#add('junegunn/fzf')
+" call minpac#add('ludovicchabant/vim-gutentags')
 call minpac#add('dense-analysis/ale')
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -32,6 +58,7 @@ let g:lightline = {
 
 call minpac#add('preservim/nerdtree')
 call minpac#add('elmcast/elm-vim')
+call minpac#add('mbbill/undotree')
 
 
 " Disable backup files *.ext~

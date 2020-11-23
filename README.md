@@ -41,3 +41,10 @@ Installation in MacOS
 ### Credits
 * https://gitee.com/dasky92/vim-config
 * [Source Code Pro Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/SourceCodePro). Download font file [Sauce Code Pro Nerd Font Complete Mono.ttf](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Regular/complete/Sauce%20Code%20Pro%20Nerd%20Font%20Complete%20Mono.ttf) to `~/.fonts` and run `sudo fc-cache`.
+* Remove excuberant-ctags `sudo apt-get purge --auto-remove exuberant-ctags`
+* Language server protocol vs ctags: [link](https://joereynoldsaudio.com/2020/03/17/ctags-lsp.html#:~:text=A%20language%20server%20is%20an,regular%20expressions%20and%20string%20matching).
+* [vim-lsp vs coc.nvim](https://www.reddit.com/r/neovim/comments/dxc7q0/vimlsp_vs_cocnvim/)
+* [fzf](https://github.com/junegunn/fzf)
+* [ripgrep](https://github.com/BurntSushi/ripgrep)
+* [vim-lsp](https://github.com/prabirshrestha/vim-lsp)
+
